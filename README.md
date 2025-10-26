@@ -3,7 +3,7 @@
 This repository contains the **extension project** accompanying the M4NLP Seminar Report  
 based on the paper:
 
-> **ProLLaMA: A Multi-Stage Instruction-Tuned Protein Language Model**  
+> **ProLLaMA: Protein Large Language Model for Multi-Task Protein Language Processing**  
 > *Liuzhenghao Lv¹, Zongying Lin¹, Hao Li¹², Yuyang Liu¹, Jiaxi Cui¹,  
 > Calvin Yu-Chian Chen¹, Li Yuan¹²\*, Yonghong Tian¹²\**  
 > ¹Peking University, China ²Peng Cheng Laboratory, China (2024)
@@ -12,10 +12,10 @@ based on the paper:
 
 ##  Overview
 
-This project implements a **seven-stage evaluation pipeline** to compare instruction tuned and autoregressive protein language models — **ProLLaMA** and **ProtGPT2** — on their ability to generate biologically meaningful, structurally stable sequences.
+This project implements a **evaluation pipeline** to compare instruction tuned and autoregressive protein language models **ProLLaMA** and **ProtGPT2** on their ability to generate biologically meaningful, structurally stable sequences.
 
 The proposed **Mini-EPGF framework** (short for *Mini Evaluative Protein Generation Filter*) integrates interpretable physicochemical descriptors, filtering rules, and structural validation through **ESMFold**.  
-It aims to bridge **language-model evaluation methods from NLP** with **bioinformatics-style protein assessment**.
+It aims to bridge **language model evaluation methods from NLP** with **bioinformatics style protein assessment**.
 
 ---
 
@@ -29,7 +29,7 @@ mini_epgf/
 │   ├── plots/                 # Stage 3–7 plots (instability, GRAVY, pLDDT, ECDF, etc.)
 │   └── metrics_*.csv          # Intrinsic and merged statistics
 │
-├── 01_generate_subset.py      # Sampling + prompt-based generation
+├── 01_generate_subset.py      # Sampling + prompt based generation
 ├── 02_metrics.py              # Physicochemical metric computation
 ├── 03_filter_compare.py       # Mini-EPGF filtering and visualization
 ├── 04_select_subset.py        # Balanced subset selection
@@ -88,7 +88,7 @@ Results are saved in the `results/` directory and include:
 - **ProLLaMA** generated **42.8% biophysically valid sequences**, compared to **22.1% for ProtGPT2**.  
 - Mean predicted folding confidence (**pLDDT**) was higher for ProLLaMA (61.8) than ProtGPT2 (55.3).  
 - Instruction-tuned training yielded **more stable and hydrophilic** sequences with tighter GRAVY and instability distributions.  
-- The Mini-EPGF filter effectively distinguishes plausible protein-like generations using interpretable metrics.
+- The Mini-EPGF filter effectively distinguishes plausible protein like generations using interpretable metrics.
 
 ---
 
@@ -106,7 +106,7 @@ Results are saved in the `results/` directory and include:
 
 While **ProLLaMA** exhibits better average foldability and regularity,  
 the unexpected observation that some “rejected” sequences still fold well  
-suggests that **linguistic quality and structural confidence are not perfectly aligned** —  
+suggests that **linguistic quality and structural confidence are not perfectly aligned** 
 an important consideration for future multi-objective fine-tuning.
 
 ---
@@ -116,7 +116,7 @@ an important consideration for future multi-objective fine-tuning.
 
 ```bibtex
 @article{lv2024prollama,
-  title={ProLLaMA: A Multi-Stage Instruction-Tuned Protein Language Model},
+  title={ProLLaMA: Protein Large Language Model for Multi-Task Protein Language Processing},
   author={Lv, Liuzhenghao and Lin, Zongying and Li, Hao and Liu, Yuyang and Cui, Jiaxi and Chen, Calvin Yu-Chian and Yuan, Li and Tian, Yonghong},
   journal={arXiv preprint arXiv:2406.08850},
   year={2024}
@@ -128,7 +128,7 @@ an important consideration for future multi-objective fine-tuning.
 ---
 
 
-**Karan Rajshekar**  
+**Karan Rajshekar .**  
 Matrikelnummer: 7062715  
 Machine Learning for NLP — Saarland University  
 
