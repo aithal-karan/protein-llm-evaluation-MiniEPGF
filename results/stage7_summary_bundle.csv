@@ -1,0 +1,16 @@
+section,model,keep,n,mean,median,std,se,ci95_lower,ci95_upper,family,contrast,t,p,n_pro,n_pg2
+bucket_stats_with_ci,ProLLaMA,False,20.0,65.44500000000001,66.85,16.203263966185784,3.6231599685764264,58.34360646159021,72.5463935384098,,,,,,
+bucket_stats_with_ci,ProLLaMA,True,20.0,58.645,52.150000000000006,19.931790924893935,4.456883942137624,49.90950747341026,67.38049252658975,,,,,,
+bucket_stats_with_ci,ProtGPT2,False,20.0,51.114999999999995,44.95,16.755243484071674,3.7465863409944675,43.77169077165084,58.45830922834915,,,,,,
+bucket_stats_with_ci,ProtGPT2,True,20.0,53.004999999999995,50.6,19.148463590970863,4.281726625409058,44.61281581419824,61.39718418580175,,,,,,
+family_counts,ProLLaMA,False,12.0,,,,,,,CheY-like,,,,,
+family_counts,ProLLaMA,True,7.0,,,,,,,CheY-like,,,,,
+family_counts,ProtGPT2,False,10.0,,,,,,,CheY-like,,,,,
+family_counts,ProtGPT2,True,11.0,,,,,,,CheY-like,,,,,
+family_counts,ProLLaMA,False,8.0,,,,,,,Thioredoxin-like,,,,,
+family_counts,ProLLaMA,True,13.0,,,,,,,Thioredoxin-like,,,,,
+family_counts,ProtGPT2,False,10.0,,,,,,,Thioredoxin-like,,,,,
+family_counts,ProtGPT2,True,9.0,,,,,,,Thioredoxin-like,,,,,
+welch_tests,,,,,,,,,,,ProLLaMA vs ProtGPT2 (overall),2.4776884706886286,0.015386726346553232,40.0,40.0
+welch_tests,,,,,,,,,,,ProLLaMA vs ProtGPT2 (keep=False),2.749462190119044,0.009090306234842683,20.0,20.0
+welch_tests,,,,,,,,,,,ProLLaMA vs ProtGPT2 (keep=True),0.9125664362822253,0.3672333632796594,20.0,20.0

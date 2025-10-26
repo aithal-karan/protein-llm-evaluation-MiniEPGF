@@ -1,0 +1,5 @@
+model,keep,n,mean,median,std,se
+ProLLaMA,False,20,65.45,66.85,16.2,3.62
+ProLLaMA,True,20,58.64,52.15,19.93,4.46
+ProtGPT2,False,20,51.11,44.95,16.76,3.75
+ProtGPT2,True,20,53.0,50.6,19.15,4.28

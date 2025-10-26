@@ -1,0 +1,121 @@
+Machine Learning For NLP\mini_epgf>python 01_generate_prollama.py
+C:\Users\kaka02\AppData\Local\anaconda3\envs\hf-llama\lib\site-packages\torch\cuda\__init__.py:61: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+>> loading tokenizer/model …
+[INFO|tokenization_utils_base.py:2067] 2025-10-21 17:36:28,932 >> loading file tokenizer.model from cache at C:\Users\kaka02\.cache\huggingface\hub\models--GreatCaptainNemo--ProLLaMA\snapshots\983b5d4ff8fa82948bc68c5f02c65d4f4c76d650\tokenizer.model
+[INFO|tokenization_utils_base.py:2067] 2025-10-21 17:36:28,932 >> loading file tokenizer.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2025-10-21 17:36:28,933 >> loading file added_tokens.json from cache at None
+[INFO|tokenization_utils_base.py:2067] 2025-10-21 17:36:28,934 >> loading file special_tokens_map.json from cache at C:\Users\kaka02\.cache\huggingface\hub\models--GreatCaptainNemo--ProLLaMA\snapshots\983b5d4ff8fa82948bc68c5f02c65d4f4c76d650\special_tokens_map.json
+[INFO|tokenization_utils_base.py:2067] 2025-10-21 17:36:28,934 >> loading file tokenizer_config.json from cache at C:\Users\kaka02\.cache\huggingface\hub\models--GreatCaptainNemo--ProLLaMA\snapshots\983b5d4ff8fa82948bc68c5f02c65d4f4c76d650\tokenizer_config.json
+[INFO|tokenization_utils_base.py:2067] 2025-10-21 17:36:28,934 >> loading file chat_template.jinja from cache at None
+[INFO|configuration_utils.py:752] 2025-10-21 17:36:29,377 >> loading configuration file config.json from cache at C:\Users\kaka02\.cache\huggingface\hub\models--GreatCaptainNemo--ProLLaMA\snapshots\983b5d4ff8fa82948bc68c5f02c65d4f4c76d650\config.json
+[INFO|configuration_utils.py:817] 2025-10-21 17:36:29,391 >> Model config LlamaConfig {
+  "architectures": [
+    "LlamaForCausalLM"
+  ],
+  "attention_bias": false,
+  "attention_dropout": 0.0,
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "head_dim": 128,
+  "hidden_act": "silu",
+  "hidden_size": 4096,
+  "initializer_range": 0.02,
+  "intermediate_size": 11008,
+  "max_position_embeddings": 4096,
+  "mlp_bias": false,
+  "model_type": "llama",
+  "num_attention_heads": 32,
+  "num_hidden_layers": 32,
+  "num_key_value_heads": 32,
+  "pad_token_id": 0,
+  "pretraining_tp": 1,
+  "rms_norm_eps": 1e-05,
+  "rope_scaling": null,
+  "rope_theta": 10000.0,
+  "tie_word_embeddings": false,
+  "torch_dtype": "float16",
+  "transformers_version": "4.55.2",
+  "use_cache": true,
+  "vocab_size": 32000
+}
+
+[INFO|modeling_utils.py:1309] 2025-10-21 17:36:30,781 >> loading weights file model.safetensors from cache at C:\Users\kaka02\.cache\huggingface\hub\models--GreatCaptainNemo--ProLLaMA\snapshots\983b5d4ff8fa82948bc68c5f02c65d4f4c76d650\model.safetensors.index.json
+[INFO|modeling_utils.py:2412] 2025-10-21 17:36:30,781 >> Instantiating LlamaForCausalLM model under default dtype torch.float16.
+[INFO|configuration_utils.py:1098] 2025-10-21 17:36:30,797 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 0
+}
+
+2025-10-21 17:36:30,901 | INFO | We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+Loading checkpoint shards: 100%|███████████████████████████████████████████████████████████████| 2/2 [00:07<00:00,  3.80s/it]
+[INFO|modeling_utils.py:5614] 2025-10-21 17:36:38,531 >> All model checkpoint weights were used when initializing LlamaForCausalLM.
+
+[INFO|modeling_utils.py:5622] 2025-10-21 17:36:38,531 >> All the weights of LlamaForCausalLM were initialized from the model checkpoint at GreatCaptainNemo/ProLLaMA.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use LlamaForCausalLM for predictions without further training.
+[INFO|configuration_utils.py:1053] 2025-10-21 17:36:38,688 >> loading configuration file generation_config.json from cache at C:\Users\kaka02\.cache\huggingface\hub\models--GreatCaptainNemo--ProLLaMA\snapshots\983b5d4ff8fa82948bc68c5f02c65d4f4c76d650\generation_config.json
+[INFO|configuration_utils.py:1098] 2025-10-21 17:36:38,688 >> Generate config GenerationConfig {
+  "bos_token_id": 1,
+  "eos_token_id": 2,
+  "pad_token_id": 0
+}
+
+>> model loaded; starting generation.
+[CheY-like superfamily] generating:  16%|▏| 24/150 [02:02<12:43,  6.06s/it, kept=25/25, last_len=211[CheY-like superfamily] sample 25: kept=25 | last_len=211 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<CheY-like superfamily> Output:Seq=<MSEGFKGLIVVDPSPVRQKVLTKILRDNGHSVEVLSTAEEALKLIDEN...
+[CheY-like superfamily] generating:  33%|▎| 49/150 [04:08<07:37,  4.53s/it, kept=50/50, last_len=252[CheY-like superfamily] sample 50: kept=50 | last_len=252 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<CheY-like superfamily> Output:Seq=<MPQTIVLIVDDEESIRLALKRIIGSEGFNVVEAASGEEALAKFEQERP...
+[CheY-like superfamily] generating:  49%|▍| 74/150 [06:09<05:42,  4.51s/it, kept=75/75, last_len=171[CheY-like superfamily] sample 75: kept=75 | last_len=171 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<CheY-like superfamily> Output:Seq=<MTGAGVRVLLVEDDAAIRALITRMLEDQGFNVDWAEDGTQGLAAVLEA...
+[CheY-like superfamily] generating:  66%|▋| 99/150 [08:21<03:54,  4.60s/it, kept=100/100, last_len=2[CheY-like superfamily] sample 100: kept=100 | last_len=205 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<CheY-like superfamily> Output:Seq=<MTKDVNILIIEDNLDNAQLLTKTLKAENFKVIGLSTGTEALQYIKDKN...
+[CheY-like superfamily] generating:  83%|▊| 124/150 [10:32<02:08,  4.93s/it, kept=125/125, last_len=[CheY-like superfamily] sample 125: kept=125 | last_len=216 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<CheY-like superfamily> Output:Seq=<MEVRNRILLIDDELKLCDVISEILAGDQFSISTAENGLEALAQLRETQ...
+[CheY-like superfamily] generating:  99%|▉| 149/150 [12:38<00:04,  4.89s/it, kept=150/150, last_len=[CheY-like superfamily] sample 150: kept=150 | last_len=134 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<CheY-like superfamily> Output:Seq=<MSPSSHVIVVDDDESIRQLLKDMLRELGHEVEVATSGEEALRLAEDLR...
+[CheY-like superfamily] generating: 100%|█| 150/150 [12:38<00:00,  5.05s/it, kept=150/150, last_len=
+[CheY-like superfamily] kept 150 / 150 in 758.1s
+[Thioredoxin-like superfamily] generating:  16%|▏| 24/150 [02:22<11:34,  5.51s/it, kept=25/25, last_[Thioredoxin-like superfamily] sample 25: kept=25 | last_len=204 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<Thioredoxin-like superfamily> Output:Seq=<MSTVQRLAALLFALFLLPATAAQAAPPAGKAVRADIYHGPL...
+[Thioredoxin-like superfamily] generating:  33%|▎| 49/150 [04:37<09:06,  5.41s/it, kept=50/50, last_[Thioredoxin-like superfamily] sample 50: kept=50 | last_len=165 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<Thioredoxin-like superfamily> Output:Seq=<MQVRVLLKALTILLFAILTGVSACQSQEESNPKLTEISELS...
+[Thioredoxin-like superfamily] generating:  49%|▍| 74/150 [07:14<06:54,  5.45s/it, kept=74/75, last_[Thioredoxin-like superfamily] sample 75: kept=74 | last_len=236 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<Thioredoxin-like superfamily> Output:Seq=<MKGKLILGLAVALFLIIVGIYGGVYHFNTTKNQASAPKLEP...
+[Thioredoxin-like superfamily] generating:  66%|▋| 99/150 [09:29<04:03,  4.77s/it, kept=99/100, last[Thioredoxin-like superfamily] sample 100: kept=99 | last_len=126 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<Thioredoxin-like superfamily> Output:Seq=<MRLFYFLVLFFLSCTDNSKIKRPQIIEIENNTYIELQTQEA...
+[Thioredoxin-like superfamily] generating:  83%|▊| 124/150 [11:47<02:25,  5.60s/it, kept=124/125, la[Thioredoxin-like superfamily] sample 125: kept=124 | last_len=199 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<Thioredoxin-like superfamily> Output:Seq=<MAKFLLLAFLPVLALASCGDSGDAAQPEVTAPEAEADEATA...
+[Thioredoxin-like superfamily] generating:  99%|▉| 149/150 [14:11<00:06,  6.19s/it, kept=149/150, la[Thioredoxin-like superfamily] sample 150: kept=149 | last_len=206 | preview: Instruction:[Generate by superfamily] Input:Superfamily=<Thioredoxin-like superfamily> Output:Seq=<MTKVNIILFTLLSFSISAQTQAYEINPEKGATKFVGDIAAS...
+[Thioredoxin-like superfamily] generating: 100%|█| 150/150 [14:11<00:00,  5.68s/it, kept=149/150, la
+[Thioredoxin-like superfamily] kept 149 / 150 in 851.4s
+>> wrote 299 sequences -> data\gen_raw.fasta (total 1609.6s)
+>> first record: {"id": "CheY-like_superfamily_000", "fam": "CheY-like superfamily", "len": 122, "aa_valid": true, "top3mer_fraction": 0.017}
+>> predicted superfamily for first-gen seq: CheY-like superfamily
+
+
+
+
+Machine Learning For NLP/mini_epgf$ python 06_merge_plddt_and_corr.py
+merged n = 80 (unique base_id with pLDDT: 80 / metrics unique: 569)
+489 metrics rows lack pLDDT (likely not folded). E.g.: ['CheY-like_superfamily_000', 'CheY-like_superfamily_001', 'CheY-like_superfamily_003', 'CheY-like_superfamily_004', 'CheY-like_superfamily_005']
+
+=== mean pLDDT by model × keep (0–100) ===
+model     keep 
+ProLLaMA  False    65.45
+          True     58.64
+ProtGPT2  False    51.11
+          True     53.00
+Name: pLDDT, dtype: float64
+
+Wrote: results/merged_metrics_plddt.csv
+       results/plddt_by_model_keep.csv
+
+== correlations with pLDDT (ProLLaMA) ==
+pLDDT              1.000
+instability        0.458
+gravy              0.139
+length             0.091
+aa_entropy         0.050
+max_homopolymer    0.037
+low_complex          NaN
+Name: pLDDT, dtype: float64
+
+== correlations with pLDDT (ProtGPT2) ==
+pLDDT              1.000
+length             0.162
+max_homopolymer    0.108
+low_complex        0.090
+instability        0.050
+aa_entropy        -0.024
+gravy             -0.117
+Name: pLDDT, dtype: float64

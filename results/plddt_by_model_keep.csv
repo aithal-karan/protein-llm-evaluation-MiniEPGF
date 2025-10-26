@@ -1,0 +1,5 @@
+model,keep,pLDDT
+ProLLaMA,False,65.45
+ProLLaMA,True,58.64
+ProtGPT2,False,51.11
+ProtGPT2,True,53.0

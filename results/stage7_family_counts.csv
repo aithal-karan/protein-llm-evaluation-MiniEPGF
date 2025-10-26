@@ -1,0 +1,9 @@
+family,model,keep,n
+CheY-like,ProLLaMA,False,12
+CheY-like,ProLLaMA,True,7
+CheY-like,ProtGPT2,False,10
+CheY-like,ProtGPT2,True,11
+Thioredoxin-like,ProLLaMA,False,8
+Thioredoxin-like,ProLLaMA,True,13
+Thioredoxin-like,ProtGPT2,False,10
+Thioredoxin-like,ProtGPT2,True,9
