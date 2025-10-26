@@ -127,7 +127,6 @@ an important consideration for future multi-objective fine-tuning.
 
 ---
 
-## Author
 
 **Karan Rajshekar**  
 Matrikelnummer: 7062715  
