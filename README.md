@@ -3,7 +3,7 @@
 This repository contains the **extension project** accompanying the M4NLP Seminar Report  
 based on the paper:
 
-> **ProLLaMA: Protein Large Language Model for Multi-Task Protein Language Processing**  
+> **ProLLaMA: A Protein Large Language Model for Multi-Task Protein Language Processing**  
 > *Liuzhenghao Lv¹, Zongying Lin¹, Hao Li¹², Yuyang Liu¹, Jiaxi Cui¹,  
 > Calvin Yu-Chian Chen¹, Li Yuan¹²\*, Yonghong Tian¹²\**  
 > ¹Peking University, China ²Peng Cheng Laboratory, China (2024)
